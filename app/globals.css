@@ -1,3 +1,7 @@
+*{
+  /* outline: 1px solid black; */
+  margin: 0px !important;
+}
 li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child{
   background: none;
 }
@@ -9,8 +13,48 @@ li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-onl
   background: red;
   display: block;
 }
+li.ant-menu-overflow-item.ant-menu-overflow-item-rest.ant-menu-submenu.ant-menu-submenu-horizontal.ant-menu-submenu-selected{
+  background: none;
+}
+/*overflow view continue symbol.*/
+:where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark .ant-menu-item-selected, :where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark>.ant-menu .ant-menu-item-selected{
+  background: none!important;
+}
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child::before{
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: red;
+  display: block;
+}
 
-@media screen and (max-width: 600px) {
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.three{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.createbutton{
+  background: #FFEEE8;
+  border-radius: 0px !important;
+  color: #FF6636;
+  border: none;
+}
+.signin{
+  background: #FF6636;
+  border-radius: 0px !important;
+  color: white;
+  border: none;
+}
+.pdTop{
+  padding-top: 10px;
+}
+/* @media screen and (max-width: 750px) {
   body {
     background-color: olive;
     
@@ -18,4 +62,4 @@ li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-onl
   .gutter-row .one{
     display: unset;
   }
-}
+} */
