@@ -8,9 +8,7 @@ import { Input } from 'antd';
 import { Dropdown, message, Space , Button} from 'antd';
 import Image from 'next/image';
 
-const onClick: MenuProps['onClick'] = ({ key }) => {
-    message.info(`Selected ${key}`);
-  };
+
 const items: MenuProps['items'] = [
     {
       label: 'Browse',
@@ -18,6 +16,11 @@ const items: MenuProps['items'] = [
     },
   ];
 const SearchMenu: React.FC = () => {
+  const [current, setCurrent] = useState('Browse');
+  const onClick: MenuProps['onClick'] = ({ key }) => {
+    message.info(` Selected ${key}`);
+    setCurrent(key);
+  };
   return <div className='maindata'>
         <style jsx>{`
         
@@ -32,23 +35,23 @@ const SearchMenu: React.FC = () => {
                 priority={true}
             />
             </Col>
-            <Col className="gutter-row two" span={8} md={8} sm={12} xs={16} style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'center', paddingRight: "12px", gap: "10px"}}>
-                <div style={{border: "1px solid #d9d9d9", padding: "5px 10px"}}>
+            <Col className="gutter-row two" span={8} md={10} sm={12} xs={16} style={{display: 'flex', justifyContent: 'start', alignItems: 'center', paddingRight: "12px", gap: "10px"}}>
+                <div style={{border: "1px solid #d9d9d9", padding: "7px 10px"}}>
                     <Dropdown menu={{ items, onClick }} >
-                        <a onClick={(e) => e.preventDefault()}>
+                        <a onClick={(e) => e.preventDefault()} style={{color: "#717373"}}>
                             <Space>
-                            Browse
-                            <DownOutlined />
+                            {current}
+                            <DownOutlined width={16} height={16} style={{paddingLeft: "30px"}}/>
                             </Space>
                         </a>
                     </Dropdown>
                 </div>
                 <div>
-                    <Input size="middle" placeholder="What do you want learn..." prefix={<SearchOutlined />} style={{borderRadius: "0px"}}/>
+                    <Input size="middle" placeholder="What do you want learn..." prefix={<SearchOutlined />} style={{borderRadius: "0px", color: "#717373", paddingRight: "30px"}}/>
                 </div>
             </Col>
             
-            <Col className="gutter-row three" span={12} md={12} sm={24} xs={24}>
+            <Col className="gutter-row three" span={12} md={10} sm={24} xs={24}>
               <Space wrap>
                 <Space>
                   <BellOutlined width={24} height={24}/>

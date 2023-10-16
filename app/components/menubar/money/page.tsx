@@ -19,15 +19,15 @@ import { Dropdown, message, Space } from 'antd';
 const MoneyDropDown: React.FC = () => {
   const [current, setCurrent] = useState('USD');
   const onClick: MenuProps['onClick'] = ({ key }) => {
-    message.info(`Selected ${key}`);
+    message.info(` Selected ${key}`);
     setCurrent(key)
   };
 return <div>
             <Dropdown menu={{ items, onClick }}>
               <a onClick={(e) => e.preventDefault()}>
-                <Space>
+                <Space className='dropdownfont'>
                   {current}
-                  <DownOutlined />
+                  <DownOutlined className='dropdown' />
                 </Space>
               </a>
             </Dropdown>
