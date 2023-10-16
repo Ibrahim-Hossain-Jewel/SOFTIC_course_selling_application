@@ -28,7 +28,7 @@ const SearchMenu: React.FC = () => {
         <Row gutter={{ xs: 24, sm: 24, md: 24, lg: 32 }} className='pdTop'>
             <Col className="gutter-row one" span={4} md={4} xs={8} sm={12}>
             <Image
-                src="/brand.PNG"
+                src="/LOGO.png"
                 width={100}
                 height={50}
                 alt="Logo"

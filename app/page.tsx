@@ -9,18 +9,8 @@ import type { MenuProps } from 'antd';
 import MoneyDropDown from './components/menubar/money/page';
 import LanguageDropDown from './components/menubar/language/page';
 import SearchMenu from './components/menubar/searchmenu/page';
+import Header from './components/header/page';
 const style: React.CSSProperties = { background: '#0092ff', padding: '8px 0' };
-
-const items1: MenuProps['items'] = [
-  {
-    label: 'English',
-    key: 'English',
-  },
-  {
-    label: 'Bangla',
-    key: 'Bangla',
-  },
-];
 
 export default function Home() {
   return (
@@ -40,6 +30,10 @@ export default function Home() {
       </Row>
       <div>
         <SearchMenu />
+      </div>
+      <div>
+        
+        <Header />
       </div>
     </main>
   )

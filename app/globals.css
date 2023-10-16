@@ -4,6 +4,20 @@
   font-family: Inter;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+/*Header component*/
+.headerComp{
+  background: #F0F2F5;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.headerCenterText h2{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*End header component*/
+
 /*starting top navigation bar*/
 li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child{
   background: none;
@@ -67,6 +81,7 @@ li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child::before{
 .pdTop{
   padding-top: 10px;
 }
+/*End top navigation*/
 /* @media screen and (max-width: 750px) {
   body {
     background-color: olive;
