@@ -12,11 +12,11 @@ const Header: React.FC = () => {
 
   return <div className='pdTop'>
     
-    <Row gutter={{ xs: 24, sm: 24, md: 24, lg: 32 }} className='headerComp'>
-        <Col className="gutter-row" span={5}>
+    <Row gutter={24} className='headerComp'>
+        <Col className="gutter-row" span={4}>
             
         </Col>
-        <Col className='gutter-row' span={6} md={6} sm={24} xs={24}>
+        <Col className='gutter-row' span={8} md={8} sm={24} xs={24}>
             <div className='headerCenterText'>
                 <h2>Learn with expart anytime anywhere</h2>
                 <p className='pdTop'>
@@ -29,16 +29,15 @@ const Header: React.FC = () => {
                 <p className='pdTop'></p>
             </div>
         </Col>
-        <Col className='gutter-row' span={13} md={13} sm={24} xs={24}>
-            <Image
-                src="/Images.png"
-                width={657}
-                height={340}
-                alt="Logo"
-                priority={true}
-                quality={75}
-                layout='responsive'
-            />
+        <Col className='gutter-row' span={12} md={12} sm={24} xs={24}>
+                <Image
+                    src="/Images.png"
+                    width={900}
+                    height={340}
+                    alt="Logo"
+                    quality={75}
+                    layout='responsive'
+                />
         </Col>
     </Row>
   </div>

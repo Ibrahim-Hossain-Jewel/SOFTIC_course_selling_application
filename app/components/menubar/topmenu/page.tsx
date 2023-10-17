@@ -37,15 +37,15 @@ const Menubar: React.FC = () => {
   };
   return <div>
         <style jsx>{`
-        li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
-          background: red !important;
-        }
-        :where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark .ant-menu-item-selected, :where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark>.ant-menu .ant-menu-item-selected{
-          background: red !important;
-        }
-        .man{
-          background: green;
-        }
+        // li.ant-menu-overflow-item.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
+        //   background: red !important;
+        // }
+        // :where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark .ant-menu-item-selected, :where(.css-dev-only-do-not-override-amq5gd).ant-menu-dark>.ant-menu .ant-menu-item-selected{
+        //   background: red !important;
+        // }
+        // .man{
+        //   background: green;
+        // }
       `}</style>
         <Menu selectedKeys={[current]} onClick={onClick} mode="horizontal" items={items} theme='dark' className='man'/>
   </div>

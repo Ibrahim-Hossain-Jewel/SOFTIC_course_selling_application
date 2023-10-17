@@ -4,7 +4,74 @@
   font-family: Inter;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-/*Header component*/
+/*Starting the best selling course*/
+.category.price{
+  font-size: 10px;
+}
+.centercard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.centercard b{
+  font-size: 10px;
+}
+.priceCategory{
+  display: flex;
+  justify-content: space-between;
+}
+.studentCategory{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+:where(.css-dev-only-do-not-override-amq5gd).ant-card .ant-card-body{
+  padding: 10px;
+}
+:where(.css-dev-only-do-not-override-amq5gd).ant-card .ant-card-cover img, :where(.css-dev-only-do-not-override-amq5gd).ant-card .ant-card-cover img+.ant-image-mask{
+  border-radius: 0;
+}
+/*Ending the best selling corse*/
+/*Starting category component*/
+.componentSection{
+  display: flex;
+  gap: 5px;
+  background: #EBEBFF;
+  padding: 5px 10px;
+}
+.componentSection:hover{
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.componentSection dd{
+  font-size: 12px;
+}
+.dataSection p{
+  font-size: 13px;
+  font-weight: bold;
+}
+.pdBottom{
+  padding-bottom: 15px;
+}
+.business{
+  background: #E1F7E3;
+}
+.itsoftware{
+  background: #FFF2E5;
+}
+.personaldevelopment{
+  background: white;
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.officePrductivity{
+  background: #F5F7FA;
+}
+.pdTopCategory{
+  padding-top: 15px;
+}
+/*End category component*/
+/*starting Header component*/
 .headerComp{
   background: #F0F2F5;
   display: flex;

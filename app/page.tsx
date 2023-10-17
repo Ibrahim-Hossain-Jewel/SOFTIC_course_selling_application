@@ -10,12 +10,14 @@ import MoneyDropDown from './components/menubar/money/page';
 import LanguageDropDown from './components/menubar/language/page';
 import SearchMenu from './components/menubar/searchmenu/page';
 import Header from './components/header/page';
+import Category from './components/category/page';
+import BestSellingApp from './components/bestSellingCourse/page';
 const style: React.CSSProperties = { background: '#0092ff', padding: '8px 0' };
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Row justify="space-between">
+      <Row justify="space-between" style={{background: "#001529"}}>
         <Col className="gutter-row" span={14}>
           <Menubar />
         </Col>
@@ -32,8 +34,14 @@ export default function Home() {
         <SearchMenu />
       </div>
       <div>
-        
+
         <Header />
+      </div>
+      <div>
+        <Category />
+      </div>
+      <div>
+        <BestSellingApp />
       </div>
     </main>
   )
