@@ -35,7 +35,7 @@ const BestSellingApp: React.FC = () => {
             title="Confirm buy course"
             description="Are you sure want to confirm"
             onConfirm={confirm}
-            onOpenChange={() => setCoursename('Machine Learning Mentored by ibrahim')
+            onOpenChange={() => setCoursename('Machine Learning designed by ibrahim')
         }
             >
                 <Col className="gutter-row pdBottom" span={5} md={5} sm={8} xs={12}>
