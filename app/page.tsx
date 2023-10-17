@@ -12,9 +12,13 @@ import SearchMenu from './components/menubar/searchmenu/page';
 import Header from './components/header/page';
 import Category from './components/category/page';
 import BestSellingApp from './components/bestSellingCourse/page';
+import { useAppSelector } from './Redux/page';
+
 const style: React.CSSProperties = { background: '#0092ff', padding: '8px 0' };
 
 export default function Home() {
+  const coursename = useAppSelector((state)=> state.courseReducer.value.courseName);
+  console.log("redux store coursename", coursename);
   return (
     <main className={styles.main}>
       <Row justify="space-between" style={{background: "#001529"}}>
@@ -34,7 +38,6 @@ export default function Home() {
         <SearchMenu />
       </div>
       <div>
-
         <Header />
       </div>
       <div>

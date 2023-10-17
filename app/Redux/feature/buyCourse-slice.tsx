@@ -27,8 +27,8 @@ export const course = createSlice({
         buy: (state, action: PayloadAction<string>)=>{
             return{
                 value: {
-                    courseName: 'Machine Learning',
-                    courseprice: 5,
+                    courseName: action.payload,
+                    courseprice: 57,
                     courseid: 10,
                     courserating: 3
                 }
